@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+      body{
+        background-color: black;
+      }
+        .topnav {
+          overflow: hidden;
+          background-color:black;
+        }
+        .topnav a {
+          float: left;
+          color: yellow;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+       /* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  position: absolute;
+  font-size: 50px;
+  font-family: Times Romen;
+  color: white;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.text1 {
+  position: absolute;
+  font-size: 50px;
+  font-family: Times Romen;
+  color:white;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.text2 {
+  position: absolute;
+  font-size: 50px;
+  font-family: Times Romen;
+  color:white;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+       
+        
+        p{
+          color: white;
+        }
+        button,button1,button3{
+          background-color: rgb(192, 192, 27);
+          color: white;
+          border: none;
+          height: 30px;
+          cursor: pointer;
+        }
+        .set{
+        border:none;
+          
+        background-color: rgb(255, 235, 205);
+        }
+        .makeup{
+          color: black;
+          text-align: center;
+
+        }
+        .caption-container {
+  text-align: center;
+  position: relative;
+  background-color: #222;
+  padding: 0.px 16px;
+  font-size: 25px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: none;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+        .footer{
+            background-color: black;
+            color: white;
+        }
+        li {
+    display:inline;
+    padding: 100px;
+}
+#menu {
+    margin: 16px 0px 16px 0px;
+}
+.footer{
+            background-color: black;
+            color: white;
+        }
+        
+  
+            </style>
+        </head>
+        <body>
+            
+          
+              
+              
+           
+            <div class="topnav">
+              
+                <a href ="home.html">Home</a>
+                <a href ="Makeup.html">Makeup</a>
+                <a href ="About Us.html">About Us</a>
+                <a href ="Contact us.html">Contact Us</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Registerform.html">Course Registeration</a>
+                <div style=float:right><a href="Signup.html">Signup</a></div>
+                <div style=float:right><a href ="login.html">Login</a></div>
+            </div> 
+            
+               
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="C:\Users\ELCOT\Pictures\136679908_426146965189820_3215951687600547083_n.jpg" style="width:100%">
+                  <div class="text">Wedding Makeup</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="C:\Users\ELCOT\Pictures\150526342_746170089362566_1268463751818361708_n.jpg" style="width:100%">
+                  <div class="text1">Highlight The Best In U</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="C:\Users\ELCOT\Pictures\134564195_352234309554979_4577035457145142561_n.jpg" style="width:100%">
+                  <div class="text2">Best Hairstyle</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+             <script>
+                  var slideIndex = 0;
+           showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script> 
+                  
+<form>                
+<p>
+                    DV Bridal Academy
+Love For Beauty Is Taste And Creation Of Beauty Is An Art
+Personal Grooming Course
+This course is specially designed for today’s smart woman or orientated working women who have no time, yet want to upgrade her personal image according to her own lifestyle at her own convenience. It’s the ultimate learning environment for learning how to look more beautiful, therefore boosting her self esteem and confidence. You will be explained the easy every day makeup techniques along with the hands on practice with makeup.<br></p>
+<center><button class="button" name="Know more" formaction="About Us.html">Know More</button></center><br><br>
+
+<p>Professional Make-Up Course
+This 5 week comprehensive course will take you from a basic make up application to an advanced makeup specialist level. Our course is taught by an experienced makeup artist DivyaVinu herself. Each day during this course you will learn a large variety of tips and tricks that will enhance your bridal on her special day. You will go over a wide range of product and learn what to use in order to achieve the ideal make up look for your client.<br></p><center>
+  <button class="button1" formaction="Blog.html" >Know More</button></center><br><br>
+  <fieldset class="set">
+    <h1 class="makeup">Makeup By DV Bridal</h1>
+  
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\140054239_227263848985058_6160239565378782810_n.jpg" style="width:100%" onclick="currentSlide(1)" alt="Muhurtham Makeover">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\159959582_905273096680997_3729417944746867359_n.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bride">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\118407022_533741460724797_7225417329734124846_n.jpg" style="width:100%" onclick="currentSlide(3)" alt="Reception Makeover">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\118040250_339868490473759_6023134407961009340_n.jpg" style="width:100%" onclick="currentSlide(4)" alt="Traditional Look">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\118298756_120941416148154_4402811179566374760_n.jpg" style="width:100%" onclick="currentSlide(5)" alt="Reception Makeover">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\ELCOT\Pictures\135759128_218011826600525_2341138053846840673_n.jpg" style="width:100%" height="220px" onclick="currentSlide(6)" alt="Muhurtham">
+      </div>
+  </div><br>
+  <center><button class="button3" formaction="Makeup.html" >Know More</button></center>
+  
+</fieldset><br><br>
+  <footer class="footer">
+    <fieldset>
+      <h1 style="color: gold">DV bridal</h1>
+      <p style="color:white">DV Bridal Provide to the modern Indian woman <br>a plethora of beauty and grooming services with <br>its repertoire of professional beauticians and stylists.<br><br>
+        +91 9811296961<br>
+        +91 9811296971<br><br>
+
+        F 19/3, sector-8, Keelkattalai,<br>
+        Near Bus Stand,<br>
+        Chennai -600026, India.<br>
+        </p>
+        
+        <hr>
+    <p>Privacy policy | Cookie policy | Do Not Sell My Personel Information | Terms Made with in NYC @2021 DV Bridal </p>
+    
+
+</fieldset>
+</footer>
+ 
+
+</form>
+</body>
+</html>

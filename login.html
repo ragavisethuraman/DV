@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dv bridal acadamy</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/free-vector/abstract-background-red_1078-436.jpg?size=626&ext=jpg");
+        
+        }
+        marquee{
+            color: white;
+             font-size: 30px;
+
+        }
+        fieldset{
+            background-image: url("https://img.freepik.com/free-vector/abstract-background-red_1078-436.jpg?size=626&ext=jpg");
+            
+            color: white;
+        
+            border-radius: 5px;
+            text-align: center;
+            width: 50%;
+            height: 50%;
+        }
+        h1,p{
+            color:white;
+        }
+        
+        .button{
+            background-color: rgb(61, 20, 156);
+            color: white;
+            border: none;
+            height: 30px;
+        }
+        .button2{
+            background-color: rgb(61, 20, 156);
+            color: white;
+            border: none;
+            height: 30px;
+
+        }
+        .button3{
+            background-color: rgb(61, 20, 156);
+            color: white;
+            border: none;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<script>
+    function validateform()
+    {
+        var username=document.myform.username.value;
+        var password=document.myform.password.value;
+        if(username==null || username==""){
+            alert("Name can't be blank");
+            return false;
+        }
+        else if(password.length<6){
+            alert("password must be at least 6 characters long.")
+            return false;
+        
+        }
+
+    }
+</script>
+
+<body>
+    
+    <center>
+    <form name="myform" method="post" action="website.html"onsubmit="return validateform()">
+        <h1>Welcome !</h1><br>
+        <marquee>DV Bridal Academy</marquee><br>
+        <p>Take the next step towards your personal and professional goals.</p><br>
+<fieldset><br>
+    
+        Username: <input type="username" name="username"  placeholder="username"><br><br>
+        Password: <input type="password" name="password" value="" placeholder="password"><br><br>
+        <button class="button" value="Login">Login</button>
+        <button class="button2" formaction="resetpassword.html">Reset password</button>
+        <p> Don't have an account ? </p>
+        <button class="button3" formaction="Signup.html">Sign Up</button>
+    </fieldset>
+    </center>
+    </form>
+</body>
+</html>
