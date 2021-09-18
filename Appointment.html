@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment by Dv</title>
+    <style>
+        fieldset{
+            border: none;
+            border-width: 0;
+            border-radius: 5px;
+            background-color: rgb(212, 183, 19);
+            
+        }
+        .text{
+            height: 80px;
+            width: 20%;
+        }
+        .text2{
+            background-color: rgb(28, 28, 122);
+            height: 30px;
+            width: 60px;
+            border: none;
+            border-radius: 0%;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+<center>
+    <h1>    Make your Appointment    </h1>
+
+</center> 
+  <fieldset>
+      <h>Contact Us</h>
+       Enter name(required)<br>
+       <input type="text" name="user" value="" placeholder="Your name"><br><br>
+       Event Name<br>
+       <input list="browsers" name="myBrowser" placeholder="Event name"/></label>
+<datalist id="browsers">
+  <option value="Wedding">
+  <option value="Reception">
+  <option value="Party Makeup">
+  
+</datalist><br><br>
+Requirment<br>
+<input list="browsers" name="Browser" placeholder="Bride require"/></label>
+<datalist id="Hairstyling + Makeup">
+<option value="Hairstyle">
+<option value="Reception Makeover">
+<option value="Party Makeup">
+ <option value="Wedding Makeover">
+
+</datalist><br><br>
+Event Date<br>
+<input type="date" name="date" ><br><br>
+Mobile No<br>
+<input type="tel" name"telephone" placeholder="8784869759"pattern="[0-9]{2}[0-9]{2}[0-9]{6}" required><br><br>
+Location<br>
+<input type="text" name="locaton" placeholder="Event place"><br><br>
+Message<br>
+<input class="text" name="message" placeholder="write here"><br><br>
+<button class="text2" formaction="sfullyreg.html">Submit</button>
+
+   </fieldset>
+
+</body>
+</html>
